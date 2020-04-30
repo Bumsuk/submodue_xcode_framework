@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C0C6B7A4245AAD5B00F928C3 /* sub_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C6B7A2245AAD5B00F928C3 /* sub_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0C6B7B5245AB08800F928C3 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C6B7B4245AB08800F928C3 /* Hello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0C6B79F245AAD5B00F928C3 /* sub_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sub_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C6B7A2245AAD5B00F928C3 /* sub_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sub_framework.h; sourceTree = "<group>"; };
 		C0C6B7A3245AAD5B00F928C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C6B7B4245AB08800F928C3 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				C0C6B7A2245AAD5B00F928C3 /* sub_framework.h */,
 				C0C6B7A3245AAD5B00F928C3 /* Info.plist */,
+				C0C6B7B4245AB08800F928C3 /* Hello.swift */,
 			);
 			path = sub_framework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					C0C6B79E245AAD5B00F928C3 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C6B7B5245AB08800F928C3 /* Hello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		C0C6B7A8245AAD5B00F928C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V52W229XV3;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nulllun.sub-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		C0C6B7A9245AAD5B00F928C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V52W229XV3;
